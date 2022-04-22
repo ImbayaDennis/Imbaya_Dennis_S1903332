@@ -155,7 +155,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:padding="12dp"
-            android:src="@drawable/ic_calendar"
+            android:src="@drawable/ic_filter"
             app:tint="@color/colorAccent" />
     </androidx.cardview.widget.CardView>
 

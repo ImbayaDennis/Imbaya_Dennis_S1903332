@@ -84,7 +84,7 @@ public class roadworks_details extends AppCompatActivity {
         description = findViewById(R.id.description);
         guid = findViewById(R.id.guid);
         link = findViewById(R.id.link);
-        publishDate = findViewById(R.id.publish_date);
+        publishDate = findViewById(R.id.date_tv);
         title = findViewById(R.id.title);
         reference = findViewById(R.id.reference);
         road = findViewById(R.id.road);
