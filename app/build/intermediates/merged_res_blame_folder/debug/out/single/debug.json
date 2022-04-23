@@ -1,5 +1,9 @@
 [
     {
+        "merged": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\build\\intermediates\\merged_res\\debug\\drawable-anydpi_ic_filter.xml.flat",
+        "source": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\src\\main\\res\\drawable-anydpi\\ic_filter.xml"
+    },
+    {
         "merged": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_back_btn.png.flat",
         "source": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\src\\main\\res\\drawable\\ic_back_btn.png"
     },
@@ -12,8 +16,8 @@
         "source": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\src\\main\\res\\layout-land\\activity_main.xml"
     },
     {
-        "merged": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\build\\intermediates\\merged_res\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
-        "source": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+        "merged": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_ic_filter.png.flat",
+        "source": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\src\\main\\res\\drawable-xhdpi\\ic_filter.png"
     },
     {
         "merged": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_calendar.png.flat",
@@ -28,6 +32,18 @@
         "source": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\src\\main\\res\\font\\roboto_bold_italic.ttf"
     },
     {
+        "merged": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ic_filter.png.flat",
+        "source": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\src\\main\\res\\drawable-xxhdpi\\ic_filter.png"
+    },
+    {
         "merged": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\build\\intermediates\\merged_res\\debug\\layout-land_activity_roadworks_details.xml.flat",
         "source": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\src\\main\\res\\layout-land\\activity_roadworks_details.xml"
     },
@@ -36,8 +52,8 @@
         "source": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\src\\main\\res\\drawable\\bottom_corer_round.xml"
     },
     {
-        "merged": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\build\\intermediates\\merged_res\\debug\\drawable-hdpi_ic_filter.png.flat",
+        "source": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\src\\main\\res\\drawable-hdpi\\ic_filter.png"
     },
     {
         "merged": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\build\\intermediates\\merged_res\\debug\\layout-land_single_data_item.xml.flat",
@@ -48,12 +64,16 @@
         "source": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.webp"
+        "merged": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
         "merged": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_shedule.png.flat",
         "source": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\src\\main\\res\\drawable\\ic_shedule.png"
+    },
+    {
+        "merged": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
     },
     {
         "merged": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_event.png.flat",
@@ -72,12 +92,8 @@
         "source": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\src\\main\\res\\layout\\single_data_item.xml"
     },
     {
-        "merged": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.webp"
-    },
-    {
-        "merged": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.webp"
+        "merged": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
     },
     {
         "merged": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\build\\intermediates\\merged_res\\debug\\layout_single_event_item.xml.flat",
@@ -92,8 +108,8 @@
         "source": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\src\\main\\res\\drawable\\ic_back.png"
     },
     {
-        "merged": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.webp"
+        "merged": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     },
     {
         "merged": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_planner.xml.flat",
@@ -108,32 +124,36 @@
         "source": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.webp"
+        "merged": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.webp"
+        "merged": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
     },
     {
         "merged": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\build\\intermediates\\merged_res\\debug\\layout_dialog_box.xml.flat",
         "source": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\src\\main\\res\\layout\\dialog_box.xml"
     },
     {
+        "merged": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\build\\intermediates\\merged_res\\debug\\drawable-mdpi_ic_filter.png.flat",
+        "source": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\src\\main\\res\\drawable-mdpi\\ic_filter.png"
+    },
+    {
+        "merged": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
         "merged": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_cancel.png.flat",
         "source": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\src\\main\\res\\drawable\\ic_cancel.png"
     },
     {
-        "merged": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
     },
     {
         "merged": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_main.xml.flat",
         "source": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\src\\main\\res\\layout\\activity_main.xml"
-    },
-    {
-        "merged": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
         "merged": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\build\\intermediates\\merged_res\\debug\\drawable_popup_background.xml.flat",
@@ -152,10 +172,6 @@
         "source": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\src\\main\\res\\drawable\\ic_location.png"
     },
     {
-        "merged": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.webp"
-    },
-    {
         "merged": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\build\\intermediates\\merged_res\\debug\\font_roboto.ttf.flat",
         "source": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\src\\main\\res\\font\\roboto.ttf"
     },
@@ -164,7 +180,7 @@
         "source": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\src\\main\\res\\layout\\content_map.xml"
     },
     {
-        "merged": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+        "merged": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\dev\\AndroidStudioProjects\\Imbaya_Dennis_S1903332\\app\\src\\main\\res\\drawable\\ic_launcher_foreground.xml"
     }
 ]

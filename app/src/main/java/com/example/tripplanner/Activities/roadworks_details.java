@@ -5,7 +5,6 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -18,7 +17,7 @@ public class roadworks_details extends AppCompatActivity {
     DataObject item;
     private CardView toolBar;
     private ImageView backBtn;
-    private LinearLayout locationBtn;
+    private CardView locationBtn;
     private TextView  status, description, guid, link, publishDate, title, reference, road, region, county, latitude, longitude;
 
     @Override
@@ -31,7 +30,7 @@ public class roadworks_details extends AppCompatActivity {
         item = (DataObject) getIntent().getSerializableExtra("details");
         if (item != null) {
             title.setText(item.getTitle());
-            description.setText("Description: " + item.getDescription());
+            description.setText("Description\n\n " + item.getDescription());
             guid.setText("Guid: " + item.getGuid());
             link.setText("Link: " + item.getLink());
             publishDate.setText(item.getPublishDate());

@@ -20,6 +20,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.example.tripplanner.Adapters.DataObjectAdapter;
 import com.example.tripplanner.Models.DataObject;
@@ -42,7 +43,6 @@ public class MainActivity extends AppCompatActivity {
     private static RecyclerView recyclerView;
     private static ArrayList<DataObject> dataObjectArrayList;
     private CardView toolBar, plannerBtn;
-    private ArrayList<DataObject> tempList;
     private TextView noDataFound;
     private TextView dateTv;
     private ImageView filtersBtn;
@@ -50,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
     private LinearLayout dateLayout;
     private ImageView closeBtn;
     private ShimmerFrameLayout shimmerFrameLayout;
+    private SwipeRefreshLayout swipeRefreshLayout;
 
     public static String getDate(long milliSeconds, String dateFormat) {
         // Creating a DateFormatter object to display date in specified format.
@@ -108,23 +109,26 @@ public class MainActivity extends AppCompatActivity {
                 mAdapter.notifyDataSetChanged();
             }
         });
+
+        swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                recyclerView.setVisibility(View.GONE);
+                MyAsyncTasks downloadingTask = new MyAsyncTasks();
+                downloadingTask.execute();
+                swipeRefreshLayout.setRefreshing(false);
+            }
+        });
     }
 
     @Override
     public void onConfigurationChanged(Configuration newConfig) {
         super.onConfigurationChanged(newConfig);
-        Toast.makeText(this, "function", Toast.LENGTH_SHORT).show();
         // Checks the orientation of the screen
         if (newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE) {
-            recyclerView.setVisibility(View.GONE);
-            MyAsyncTasks downloadingTask = new MyAsyncTasks();
-            downloadingTask.execute();
-            Toast.makeText(this, "landscape", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Landscape Mode", Toast.LENGTH_SHORT).show();
         } else if (newConfig.orientation == Configuration.ORIENTATION_PORTRAIT) {
-            recyclerView.setVisibility(View.GONE);
-            MyAsyncTasks downloadingTask = new MyAsyncTasks();
-            downloadingTask.execute();
-            Toast.makeText(this, "portrait", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Portrait Mode", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -153,20 +157,20 @@ public class MainActivity extends AppCompatActivity {
                 dateTv.setText(dateString);
                 dateLayout.setVisibility(View.VISIBLE);
 
-                ArrayList<DataObject> clone = new ArrayList<>();
+                ArrayList<DataObject> searchResultArray = new ArrayList<>();
                 for (DataObject element : dataObjectArrayList) {
                     if (element.getPublishDate().contains(dateString)) {
-                        clone.add(element);
+                        searchResultArray.add(element);
                     }
                 }
-                if (clone.size() != 0) {
+                if (searchResultArray.size() != 0) {
                     recyclerView.setVisibility(View.VISIBLE);
                 } else {
                     recyclerView.setVisibility(View.GONE);
                     noDataFound.setVisibility(View.VISIBLE);
                 }
 
-                mAdapter = new DataObjectAdapter(clone, MainActivity.this);
+                mAdapter = new DataObjectAdapter(searchResultArray, MainActivity.this);
                 recyclerView.setAdapter(mAdapter);
                 mAdapter.notifyDataSetChanged();
 
@@ -229,12 +233,12 @@ public class MainActivity extends AppCompatActivity {
         toolBar.setBackgroundResource(R.drawable.bottom_corer_round);
 
         dataObjectArrayList = new ArrayList<>();
-        tempList = new ArrayList<DataObject>();
         recyclerView = findViewById(R.id.data_list);
         shimmerFrameLayout = findViewById(R.id.shimmer_loader);
         noDataFound = findViewById(R.id.no_data_result);
         searchInput = findViewById(R.id.search_input);
         filtersBtn = findViewById(R.id.filters_btn);
+        swipeRefreshLayout = findViewById(R.id.swipe_refresh_layout);
 
         dateLayout = findViewById(R.id.filtered_date_section);
         dateTv = findViewById(R.id.filter_text);
@@ -249,6 +253,7 @@ public class MainActivity extends AppCompatActivity {
             super.onPreExecute();
             shimmerFrameLayout.startShimmer();
             shimmerFrameLayout.setVisibility(View.VISIBLE);
+            recyclerView.setVisibility(View.GONE);
         }
 
         @Override
@@ -268,6 +273,7 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void run() {
                         shimmerFrameLayout.setVisibility(View.GONE);
+                        recyclerView.setVisibility(View.VISIBLE);
                     }
                 });
             }

@@ -99,7 +99,7 @@ public class location_activity extends AppCompatActivity implements OnMapReadyCa
             layoutParams.setMargins(0, 0, 40, 250);
         }
 
-        //check if gps is enabled or not and then request user to enable it
+        //check whether gps is enabled or not and then request user to enable it
         LocationRequest locationRequest = LocationRequest.create();
         locationRequest.setInterval(10000);
         locationRequest.setFastestInterval(5000);
