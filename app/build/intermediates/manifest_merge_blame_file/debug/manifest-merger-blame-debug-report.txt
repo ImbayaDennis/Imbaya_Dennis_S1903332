@@ -50,103 +50,102 @@
 29-->C:\dev\AndroidStudioProjects\Imbaya_Dennis_S1903332\app\src\main\AndroidManifest.xml:14:9-54
 30        android:supportsRtl="true"
 30-->C:\dev\AndroidStudioProjects\Imbaya_Dennis_S1903332\app\src\main\AndroidManifest.xml:15:9-35
-31        android:testOnly="true"
-32        android:theme="@style/Theme.Tripplanner"
-32-->C:\dev\AndroidStudioProjects\Imbaya_Dennis_S1903332\app\src\main\AndroidManifest.xml:16:9-49
-33        android:usesCleartextTraffic="true" >
-33-->C:\dev\AndroidStudioProjects\Imbaya_Dennis_S1903332\app\src\main\AndroidManifest.xml:17:9-44
-34        <activity
-34-->C:\dev\AndroidStudioProjects\Imbaya_Dennis_S1903332\app\src\main\AndroidManifest.xml:18:9-20:39
-35            android:name="com.example.tripplanner.Activities.event_details_activity"
-35-->C:\dev\AndroidStudioProjects\Imbaya_Dennis_S1903332\app\src\main\AndroidManifest.xml:19:13-62
-36            android:exported="true" />
-36-->C:\dev\AndroidStudioProjects\Imbaya_Dennis_S1903332\app\src\main\AndroidManifest.xml:20:13-36
-37        <activity
-37-->C:\dev\AndroidStudioProjects\Imbaya_Dennis_S1903332\app\src\main\AndroidManifest.xml:21:9-23:40
-38            android:name="com.example.tripplanner.Activities.calendar_planner_activity"
-38-->C:\dev\AndroidStudioProjects\Imbaya_Dennis_S1903332\app\src\main\AndroidManifest.xml:22:13-65
-39            android:exported="false" />
-39-->C:\dev\AndroidStudioProjects\Imbaya_Dennis_S1903332\app\src\main\AndroidManifest.xml:23:13-37
-40        <activity
-40-->C:\dev\AndroidStudioProjects\Imbaya_Dennis_S1903332\app\src\main\AndroidManifest.xml:24:9-26:39
-41            android:name="com.example.tripplanner.Activities.roadworks_details"
-41-->C:\dev\AndroidStudioProjects\Imbaya_Dennis_S1903332\app\src\main\AndroidManifest.xml:25:13-57
-42            android:exported="true" />
-42-->C:\dev\AndroidStudioProjects\Imbaya_Dennis_S1903332\app\src\main\AndroidManifest.xml:26:13-36
-43        <activity android:name="com.example.tripplanner.Activities.location_activity" />
-43-->C:\dev\AndroidStudioProjects\Imbaya_Dennis_S1903332\app\src\main\AndroidManifest.xml:27:9-66
-43-->C:\dev\AndroidStudioProjects\Imbaya_Dennis_S1903332\app\src\main\AndroidManifest.xml:27:19-63
-44        <activity
-44-->C:\dev\AndroidStudioProjects\Imbaya_Dennis_S1903332\app\src\main\AndroidManifest.xml:28:9-37:20
-45            android:name="com.example.tripplanner.Activities.MainActivity"
-45-->C:\dev\AndroidStudioProjects\Imbaya_Dennis_S1903332\app\src\main\AndroidManifest.xml:29:13-52
-46            android:configChanges="orientation|screenSize"
-46-->C:\dev\AndroidStudioProjects\Imbaya_Dennis_S1903332\app\src\main\AndroidManifest.xml:30:13-59
-47            android:exported="true" >
-47-->C:\dev\AndroidStudioProjects\Imbaya_Dennis_S1903332\app\src\main\AndroidManifest.xml:31:13-36
-48            <intent-filter>
-48-->C:\dev\AndroidStudioProjects\Imbaya_Dennis_S1903332\app\src\main\AndroidManifest.xml:32:13-36:29
-49                <action android:name="android.intent.action.MAIN" />
-49-->C:\dev\AndroidStudioProjects\Imbaya_Dennis_S1903332\app\src\main\AndroidManifest.xml:33:17-69
-49-->C:\dev\AndroidStudioProjects\Imbaya_Dennis_S1903332\app\src\main\AndroidManifest.xml:33:25-66
-50
-51                <category android:name="android.intent.category.LAUNCHER" />
-51-->C:\dev\AndroidStudioProjects\Imbaya_Dennis_S1903332\app\src\main\AndroidManifest.xml:35:17-77
-51-->C:\dev\AndroidStudioProjects\Imbaya_Dennis_S1903332\app\src\main\AndroidManifest.xml:35:27-74
-52            </intent-filter>
-53        </activity>
-54
-55        <meta-data
-55-->C:\dev\AndroidStudioProjects\Imbaya_Dennis_S1903332\app\src\main\AndroidManifest.xml:39:9-41:71
-56            android:name="com.google.android.maps.v2.API_KEY"
-56-->C:\dev\AndroidStudioProjects\Imbaya_Dennis_S1903332\app\src\main\AndroidManifest.xml:40:13-62
-57            android:value="AIzaSyDEgkSKY0KAmMKqyCXTiOIIRHjocNnMQY0" />
-57-->C:\dev\AndroidStudioProjects\Imbaya_Dennis_S1903332\app\src\main\AndroidManifest.xml:41:13-68
-58        <!-- Needs to be explicitly declared on P+ -->
-59        <uses-library
-59-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\638186c383ada06dd860c160f550f0f0\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
-60            android:name="org.apache.http.legacy"
-60-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\638186c383ada06dd860c160f550f0f0\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:34:13-50
-61            android:required="false" />
-61-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\638186c383ada06dd860c160f550f0f0\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:35:13-37
-62
-63        <activity
-63-->[com.google.android.gms:play-services-base:17.3.0] C:\Users\ADMIN\.gradle\caches\transforms-3\faa3733e21ca02aed7b528f0c0d6cbeb\transformed\jetified-play-services-base-17.3.0\AndroidManifest.xml:23:9-26:75
-64            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-64-->[com.google.android.gms:play-services-base:17.3.0] C:\Users\ADMIN\.gradle\caches\transforms-3\faa3733e21ca02aed7b528f0c0d6cbeb\transformed\jetified-play-services-base-17.3.0\AndroidManifest.xml:24:13-79
-65            android:exported="false"
-65-->[com.google.android.gms:play-services-base:17.3.0] C:\Users\ADMIN\.gradle\caches\transforms-3\faa3733e21ca02aed7b528f0c0d6cbeb\transformed\jetified-play-services-base-17.3.0\AndroidManifest.xml:25:13-37
-66            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-66-->[com.google.android.gms:play-services-base:17.3.0] C:\Users\ADMIN\.gradle\caches\transforms-3\faa3733e21ca02aed7b528f0c0d6cbeb\transformed\jetified-play-services-base-17.3.0\AndroidManifest.xml:26:13-72
-67
-68        <meta-data
-68-->[com.google.android.gms:play-services-basement:17.3.0] C:\Users\ADMIN\.gradle\caches\transforms-3\425d9311c084619ca34d1211c45f96e9\transformed\jetified-play-services-basement-17.3.0\AndroidManifest.xml:23:9-25:69
-69            android:name="com.google.android.gms.version"
-69-->[com.google.android.gms:play-services-basement:17.3.0] C:\Users\ADMIN\.gradle\caches\transforms-3\425d9311c084619ca34d1211c45f96e9\transformed\jetified-play-services-basement-17.3.0\AndroidManifest.xml:24:13-58
-70            android:value="@integer/google_play_services_version" />
-70-->[com.google.android.gms:play-services-basement:17.3.0] C:\Users\ADMIN\.gradle\caches\transforms-3\425d9311c084619ca34d1211c45f96e9\transformed\jetified-play-services-basement-17.3.0\AndroidManifest.xml:25:13-66
-71
-72        <provider
-72-->[androidx.emoji2:emoji2:1.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\4d40ec21232b611dd716b892ede208d6\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
-73            android:name="androidx.startup.InitializationProvider"
-73-->[androidx.emoji2:emoji2:1.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\4d40ec21232b611dd716b892ede208d6\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
-74            android:authorities="com.example.tripplanner.androidx-startup"
-74-->[androidx.emoji2:emoji2:1.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\4d40ec21232b611dd716b892ede208d6\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
-75            android:exported="false" >
-75-->[androidx.emoji2:emoji2:1.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\4d40ec21232b611dd716b892ede208d6\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
-76            <meta-data
-76-->[androidx.emoji2:emoji2:1.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\4d40ec21232b611dd716b892ede208d6\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
-77                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-77-->[androidx.emoji2:emoji2:1.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\4d40ec21232b611dd716b892ede208d6\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
-78                android:value="androidx.startup" />
-78-->[androidx.emoji2:emoji2:1.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\4d40ec21232b611dd716b892ede208d6\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
-79            <meta-data
-79-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\ADMIN\.gradle\caches\transforms-3\b5a10263a72c0b80aefb6f8f76c83ace\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
-80                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-80-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\ADMIN\.gradle\caches\transforms-3\b5a10263a72c0b80aefb6f8f76c83ace\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
-81                android:value="androidx.startup" />
-81-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\ADMIN\.gradle\caches\transforms-3\b5a10263a72c0b80aefb6f8f76c83ace\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
-82        </provider>
-83    </application>
-84
-85</manifest>
+31        android:theme="@style/Theme.Tripplanner"
+31-->C:\dev\AndroidStudioProjects\Imbaya_Dennis_S1903332\app\src\main\AndroidManifest.xml:16:9-49
+32        android:usesCleartextTraffic="true" >
+32-->C:\dev\AndroidStudioProjects\Imbaya_Dennis_S1903332\app\src\main\AndroidManifest.xml:17:9-44
+33        <activity
+33-->C:\dev\AndroidStudioProjects\Imbaya_Dennis_S1903332\app\src\main\AndroidManifest.xml:18:9-20:39
+34            android:name="com.example.tripplanner.Activities.event_details_activity"
+34-->C:\dev\AndroidStudioProjects\Imbaya_Dennis_S1903332\app\src\main\AndroidManifest.xml:19:13-62
+35            android:exported="true" />
+35-->C:\dev\AndroidStudioProjects\Imbaya_Dennis_S1903332\app\src\main\AndroidManifest.xml:20:13-36
+36        <activity
+36-->C:\dev\AndroidStudioProjects\Imbaya_Dennis_S1903332\app\src\main\AndroidManifest.xml:21:9-23:40
+37            android:name="com.example.tripplanner.Activities.calendar_planner_activity"
+37-->C:\dev\AndroidStudioProjects\Imbaya_Dennis_S1903332\app\src\main\AndroidManifest.xml:22:13-65
+38            android:exported="false" />
+38-->C:\dev\AndroidStudioProjects\Imbaya_Dennis_S1903332\app\src\main\AndroidManifest.xml:23:13-37
+39        <activity
+39-->C:\dev\AndroidStudioProjects\Imbaya_Dennis_S1903332\app\src\main\AndroidManifest.xml:24:9-26:39
+40            android:name="com.example.tripplanner.Activities.roadworks_details"
+40-->C:\dev\AndroidStudioProjects\Imbaya_Dennis_S1903332\app\src\main\AndroidManifest.xml:25:13-57
+41            android:exported="true" />
+41-->C:\dev\AndroidStudioProjects\Imbaya_Dennis_S1903332\app\src\main\AndroidManifest.xml:26:13-36
+42        <activity android:name="com.example.tripplanner.Activities.location_activity" />
+42-->C:\dev\AndroidStudioProjects\Imbaya_Dennis_S1903332\app\src\main\AndroidManifest.xml:27:9-66
+42-->C:\dev\AndroidStudioProjects\Imbaya_Dennis_S1903332\app\src\main\AndroidManifest.xml:27:19-63
+43        <activity
+43-->C:\dev\AndroidStudioProjects\Imbaya_Dennis_S1903332\app\src\main\AndroidManifest.xml:28:9-37:20
+44            android:name="com.example.tripplanner.Activities.MainActivity"
+44-->C:\dev\AndroidStudioProjects\Imbaya_Dennis_S1903332\app\src\main\AndroidManifest.xml:29:13-52
+45            android:configChanges="orientation|screenSize"
+45-->C:\dev\AndroidStudioProjects\Imbaya_Dennis_S1903332\app\src\main\AndroidManifest.xml:30:13-59
+46            android:exported="true" >
+46-->C:\dev\AndroidStudioProjects\Imbaya_Dennis_S1903332\app\src\main\AndroidManifest.xml:31:13-36
+47            <intent-filter>
+47-->C:\dev\AndroidStudioProjects\Imbaya_Dennis_S1903332\app\src\main\AndroidManifest.xml:32:13-36:29
+48                <action android:name="android.intent.action.MAIN" />
+48-->C:\dev\AndroidStudioProjects\Imbaya_Dennis_S1903332\app\src\main\AndroidManifest.xml:33:17-69
+48-->C:\dev\AndroidStudioProjects\Imbaya_Dennis_S1903332\app\src\main\AndroidManifest.xml:33:25-66
+49
+50                <category android:name="android.intent.category.LAUNCHER" />
+50-->C:\dev\AndroidStudioProjects\Imbaya_Dennis_S1903332\app\src\main\AndroidManifest.xml:35:17-77
+50-->C:\dev\AndroidStudioProjects\Imbaya_Dennis_S1903332\app\src\main\AndroidManifest.xml:35:27-74
+51            </intent-filter>
+52        </activity>
+53
+54        <meta-data
+54-->C:\dev\AndroidStudioProjects\Imbaya_Dennis_S1903332\app\src\main\AndroidManifest.xml:39:9-41:71
+55            android:name="com.google.android.maps.v2.API_KEY"
+55-->C:\dev\AndroidStudioProjects\Imbaya_Dennis_S1903332\app\src\main\AndroidManifest.xml:40:13-62
+56            android:value="AIzaSyDEgkSKY0KAmMKqyCXTiOIIRHjocNnMQY0" />
+56-->C:\dev\AndroidStudioProjects\Imbaya_Dennis_S1903332\app\src\main\AndroidManifest.xml:41:13-68
+57        <!-- Needs to be explicitly declared on P+ -->
+58        <uses-library
+58-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\638186c383ada06dd860c160f550f0f0\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
+59            android:name="org.apache.http.legacy"
+59-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\638186c383ada06dd860c160f550f0f0\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:34:13-50
+60            android:required="false" />
+60-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\638186c383ada06dd860c160f550f0f0\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:35:13-37
+61
+62        <activity
+62-->[com.google.android.gms:play-services-base:17.3.0] C:\Users\ADMIN\.gradle\caches\transforms-3\faa3733e21ca02aed7b528f0c0d6cbeb\transformed\jetified-play-services-base-17.3.0\AndroidManifest.xml:23:9-26:75
+63            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+63-->[com.google.android.gms:play-services-base:17.3.0] C:\Users\ADMIN\.gradle\caches\transforms-3\faa3733e21ca02aed7b528f0c0d6cbeb\transformed\jetified-play-services-base-17.3.0\AndroidManifest.xml:24:13-79
+64            android:exported="false"
+64-->[com.google.android.gms:play-services-base:17.3.0] C:\Users\ADMIN\.gradle\caches\transforms-3\faa3733e21ca02aed7b528f0c0d6cbeb\transformed\jetified-play-services-base-17.3.0\AndroidManifest.xml:25:13-37
+65            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+65-->[com.google.android.gms:play-services-base:17.3.0] C:\Users\ADMIN\.gradle\caches\transforms-3\faa3733e21ca02aed7b528f0c0d6cbeb\transformed\jetified-play-services-base-17.3.0\AndroidManifest.xml:26:13-72
+66
+67        <meta-data
+67-->[com.google.android.gms:play-services-basement:17.3.0] C:\Users\ADMIN\.gradle\caches\transforms-3\425d9311c084619ca34d1211c45f96e9\transformed\jetified-play-services-basement-17.3.0\AndroidManifest.xml:23:9-25:69
+68            android:name="com.google.android.gms.version"
+68-->[com.google.android.gms:play-services-basement:17.3.0] C:\Users\ADMIN\.gradle\caches\transforms-3\425d9311c084619ca34d1211c45f96e9\transformed\jetified-play-services-basement-17.3.0\AndroidManifest.xml:24:13-58
+69            android:value="@integer/google_play_services_version" />
+69-->[com.google.android.gms:play-services-basement:17.3.0] C:\Users\ADMIN\.gradle\caches\transforms-3\425d9311c084619ca34d1211c45f96e9\transformed\jetified-play-services-basement-17.3.0\AndroidManifest.xml:25:13-66
+70
+71        <provider
+71-->[androidx.emoji2:emoji2:1.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\4d40ec21232b611dd716b892ede208d6\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+72            android:name="androidx.startup.InitializationProvider"
+72-->[androidx.emoji2:emoji2:1.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\4d40ec21232b611dd716b892ede208d6\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
+73            android:authorities="com.example.tripplanner.androidx-startup"
+73-->[androidx.emoji2:emoji2:1.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\4d40ec21232b611dd716b892ede208d6\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
+74            android:exported="false" >
+74-->[androidx.emoji2:emoji2:1.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\4d40ec21232b611dd716b892ede208d6\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
+75            <meta-data
+75-->[androidx.emoji2:emoji2:1.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\4d40ec21232b611dd716b892ede208d6\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+76                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+76-->[androidx.emoji2:emoji2:1.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\4d40ec21232b611dd716b892ede208d6\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
+77                android:value="androidx.startup" />
+77-->[androidx.emoji2:emoji2:1.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\4d40ec21232b611dd716b892ede208d6\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
+78            <meta-data
+78-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\ADMIN\.gradle\caches\transforms-3\b5a10263a72c0b80aefb6f8f76c83ace\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+79                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+79-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\ADMIN\.gradle\caches\transforms-3\b5a10263a72c0b80aefb6f8f76c83ace\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+80                android:value="androidx.startup" />
+80-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\ADMIN\.gradle\caches\transforms-3\b5a10263a72c0b80aefb6f8f76c83ace\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+81        </provider>
+82    </application>
+83
+84</manifest>
