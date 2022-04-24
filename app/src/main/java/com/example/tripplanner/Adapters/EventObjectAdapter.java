@@ -2,18 +2,18 @@ package com.example.tripplanner.Adapters;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.util.Log;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.tripplanner.Activities.event_details_activity;
+import com.example.tripplanner.Activities.EventDetailsActivity;
 import com.example.tripplanner.Models.EventObject;
 import com.example.tripplanner.R;
 
@@ -39,29 +39,36 @@ public class EventObjectAdapter extends RecyclerView.Adapter<EventObjectAdapter.
     }
 
     @Override
-    public void onBindViewHolder(@NonNull NewViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull NewViewHolder newViewHolder, int position) {
 
         EventObject item = eventObjectList.get(position);
-        Log.d("dataITem", item.toString());
 
-        holder.date.setText(item.getDate());
-        holder.title.setText(item.getTitle());
-        holder.desc.setText(item.getDescription());
-        holder.layout.setOnClickListener(new View.OnClickListener() {
+        newViewHolder.date.setText(item.getDate());
+        newViewHolder.title.setText(item.getTitle());
+        newViewHolder.desc.setText(item.getDescription());
+        newViewHolder.layout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(context, event_details_activity.class);
-                intent.putExtra("details", item);
-                context.startActivity(intent);
+                try {
+                    Intent intent = new Intent(context, EventDetailsActivity.class);
+                    intent.putExtra("singleEventObject", item);
+                    context.startActivity(intent);
+                }catch (Exception e){
+                    Log.d("Error", e.toString());
+                }
             }
         });
 
-        holder.direction.setOnClickListener(new View.OnClickListener() {
+        newViewHolder.direction.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(context, event_details_activity.class);
-                intent.putExtra("details", item);
-                context.startActivity(intent);
+                try {
+                    Intent intent = new Intent(context, EventDetailsActivity.class);
+                    intent.putExtra("details", item);
+                    context.startActivity(intent);
+                }catch (Exception e){
+                    Log.d("Error", e.toString());
+                }
             }
         });
     }
@@ -80,10 +87,10 @@ public class EventObjectAdapter extends RecyclerView.Adapter<EventObjectAdapter.
 
         public NewViewHolder(@NonNull View itemView) {
             super(itemView);
-            layout = itemView.findViewById(R.id.parent_layout);
+            layout = itemView.findViewById(R.id.event_parent_layout);
             title = itemView.findViewById(R.id.title);
             desc = itemView.findViewById(R.id.description);
-            date = itemView.findViewById(R.id.date_tv);
+            date = itemView.findViewById(R.id.publish_date);
             direction = itemView.findViewById(R.id.scheduler_icon);
         }
     }

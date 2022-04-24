@@ -43,14 +43,10 @@ public class XmlPullParserHandler {
                         break;
 
                     case XmlPullParser.END_TAG: {
-                        Log.d("tagnameTesting", "nul");
                         if (tagname.equalsIgnoreCase("item")) {
-                            Log.d("goingToreutrn", item.toString());
                             dataItemsList.add(item);
-                        } else if (tagname.equalsIgnoreCase("author")) {
-                            item.setAuthor(text);
                         } else if (tagname.equalsIgnoreCase("category")) {
-                                item.setStatus(text);
+                            item.setStatus(text);
                         } else if (tagname.equalsIgnoreCase("description")) {
                             if (isStarted) {
                                 item = new DataObject();
@@ -62,7 +58,7 @@ public class XmlPullParserHandler {
                         } else if (tagname.equalsIgnoreCase("link")) {
                             item.setLink(text);
                         } else if (tagname.equalsIgnoreCase("pubDate")) {
-                            item.setPubDate(text);
+                            item.setPublishDate(text);
                         } else if (tagname.equalsIgnoreCase("title")) {
                             item.setTitle(text);
                         } else if (tagname.equalsIgnoreCase("reference")) {
@@ -94,7 +90,7 @@ public class XmlPullParserHandler {
             Log.d("dataITem", e.toString());
         }
 
-        Log.d("goingToreutrn", dataItemsList.size() + "");
+        Log.d("DataList size", dataItemsList.size() + "");
         return dataItemsList;
     }
 }

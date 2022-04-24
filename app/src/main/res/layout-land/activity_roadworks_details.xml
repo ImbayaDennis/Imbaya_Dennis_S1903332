@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
-    tools:context=".Activities.roadworks_details">
+    tools:context=".Activities.RoadworksDetailsActivity">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/topbar"
@@ -55,9 +55,9 @@
                 android:id="@+id/title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:gravity="center"
                 android:text="Title"
                 android:textColor="@color/colorPrimaryLight"
-                android:gravity="center"
                 android:textSize="@dimen/text_size_large" />
 
             <TextView
@@ -65,9 +65,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="5"
+                android:gravity="center"
                 android:text="Road"
                 android:textColor="@color/colorAccent"
-                android:gravity="center"
                 android:textSize="@dimen/text_size" />
 
             <TextView
@@ -161,7 +161,7 @@
             </LinearLayout>
 
             <TextView
-                android:id="@+id/date_tv"
+                android:id="@+id/publish_date"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"

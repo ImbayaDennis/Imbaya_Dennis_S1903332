@@ -4,14 +4,11 @@ import java.io.Serializable;
 
 public class DataObject implements Serializable {
 
-    String author, status, description, guid, link, pubDate, title, reference, road, region, county, latitude, longitude, overallStart, overallEnd, eventStart, eventEnd;
+    String status, description, guid, link, publishDate, title, reference, road, region, county, latitude, longitude, overallStart, overallEnd, eventStart, eventEnd;
 
     public DataObject() {
     }
 
-    public void setAuthor(String author) {
-        this.author = author;
-    }
 
     public String getStatus() {
         return status;
@@ -46,11 +43,11 @@ public class DataObject implements Serializable {
     }
 
     public String getPublishDate() {
-        return pubDate;
+        return publishDate;
     }
 
-    public void setPubDate(String pubDate) {
-        this.pubDate = pubDate;
+    public void setPublishDate(String publishDate) {
+        this.publishDate = publishDate;
     }
 
     public String getTitle() {
@@ -116,7 +113,7 @@ public class DataObject implements Serializable {
                 ", description='" + description + '\'' +
                 ", guid='" + guid + '\'' +
                 ", link='" + link + '\'' +
-                ", pubDate='" + pubDate + '\'' +
+                ", pubDate='" + publishDate + '\'' +
                 ", title='" + title + '\'' +
                 ", reference='" + reference + '\'' +
                 ", road='" + road + '\'' +

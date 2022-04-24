@@ -721,6 +721,7 @@ attr listPreferredItemPaddingStart
 attr liteMode
 attr logo
 attr logoDescription
+attr mapId
 attr mapType
 attr marginHorizontal
 attr materialAlertDialogBodyTextStyle
@@ -2505,9 +2506,9 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable app_top_bar
 drawable avd_hide_password
 drawable avd_show_password
-drawable bottom_corer_round
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -2683,6 +2684,7 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id add_event_btn
 id adjust_height
 id adjust_width
 id alertTitle
@@ -2760,9 +2762,9 @@ id customPanel
 id cut
 id dark
 id data_list
+id data_parent_layout
 id date_picker
 id date_picker_actions
-id date_tv
 id decelerate
 id decelerateAndComplete
 id decor_content_parent
@@ -2803,6 +2805,7 @@ id end
 id endToStart
 id enterAlways
 id enterAlwaysCollapsed
+id event_parent_layout
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
@@ -2962,7 +2965,6 @@ id parallax
 id parent
 id parentPanel
 id parentRelative
-id parent_layout
 id parent_matrix
 id password_toggle
 id path
@@ -2970,11 +2972,11 @@ id pathRelative
 id peekHeight
 id percent
 id pin
-id planner_btn
 id position
 id postLayout
 id progress_circular
 id progress_horizontal
+id publish_date
 id radial
 id radio
 id ratio
@@ -3228,10 +3230,10 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
-layout activity_event_list
 layout activity_main
-layout activity_planner
 layout activity_roadworks_details
+layout activity_scheduled_roadworks_list
+layout activity_scheduler
 layout content_map
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -4579,7 +4581,7 @@ styleable LinearLayoutCompat_Layout android_layout_gravity android_layout_width 
 styleable LinearProgressIndicator indeterminateAnimationType indicatorDirectionLinear
 styleable ListPopupWindow android_dropDownHorizontalOffset android_dropDownVerticalOffset
 styleable LoadingImageView circleCrop imageAspectRatio imageAspectRatioAdjust
-styleable MapAttrs ambientEnabled cameraBearing cameraMaxZoomPreference cameraMinZoomPreference cameraTargetLat cameraTargetLng cameraTilt cameraZoom latLngBoundsNorthEastLatitude latLngBoundsNorthEastLongitude latLngBoundsSouthWestLatitude latLngBoundsSouthWestLongitude liteMode mapType uiCompass uiMapToolbar uiRotateGestures uiScrollGestures uiScrollGesturesDuringRotateOrZoom uiTiltGestures uiZoomControls uiZoomGestures useViewLifecycle zOrderOnTop
+styleable MapAttrs ambientEnabled backgroundColor cameraBearing cameraMaxZoomPreference cameraMinZoomPreference cameraTargetLat cameraTargetLng cameraTilt cameraZoom latLngBoundsNorthEastLatitude latLngBoundsNorthEastLongitude latLngBoundsSouthWestLatitude latLngBoundsSouthWestLongitude liteMode mapId mapType uiCompass uiMapToolbar uiRotateGestures uiScrollGestures uiScrollGesturesDuringRotateOrZoom uiTiltGestures uiZoomControls uiZoomGestures useViewLifecycle zOrderOnTop
 styleable MaterialAlertDialog backgroundInsetBottom backgroundInsetEnd backgroundInsetStart backgroundInsetTop
 styleable MaterialAlertDialogTheme materialAlertDialogBodyTextStyle materialAlertDialogButtonSpacerVisibility materialAlertDialogTheme materialAlertDialogTitleIconStyle materialAlertDialogTitlePanelStyle materialAlertDialogTitleTextStyle
 styleable MaterialAutoCompleteTextView android_inputType

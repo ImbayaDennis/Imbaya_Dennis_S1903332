@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
-    tools:context=".Activities.roadworks_details">
+    tools:context=".Activities.RoadworksDetailsActivity">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/topbar"
@@ -144,7 +144,7 @@
                 android:textSize="@dimen/text_size" />
 
             <TextView
-                android:id="@+id/date_tv"
+                android:id="@+id/publish_date"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"

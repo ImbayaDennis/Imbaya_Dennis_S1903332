@@ -16,13 +16,13 @@
         android:theme="@style/Theme.Tripplanner"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".Activities.event_details_activity"
+            android:name=".Activities.EventDetailsActivity"
             android:exported="true" />
         <activity
-            android:name=".Activities.calendar_planner_activity"
+            android:name=".Activities.EventSchedulerActivity"
             android:exported="false" />
         <activity
-            android:name=".Activities.roadworks_details"
+            android:name=".Activities.RoadworksDetailsActivity"
             android:exported="true" />
         <activity android:name=".Activities.location_activity" />
         <activity

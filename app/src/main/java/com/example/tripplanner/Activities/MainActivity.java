@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
     private static DataObjectAdapter mAdapter;
     private static RecyclerView recyclerView;
     private static ArrayList<DataObject> dataObjectArrayList;
-    private CardView toolBar, plannerBtn;
+    private CardView toolBar, schedulerBtn;
     private TextView noDataFound;
     private TextView dateTv;
     private ImageView filtersBtn;
@@ -71,10 +71,11 @@ public class MainActivity extends AppCompatActivity {
 
 //        parserXMLData();
 
-        MyAsyncTasks downloadingTask = new MyAsyncTasks();
+        FetchRSSFeedData downloadingTask = new FetchRSSFeedData();
         downloadingTask.execute();
 
-        searchFunction();
+        SearchInBackground backgroundSearch = new SearchInBackground();
+        backgroundSearch.execute();
 
         filtersBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -82,10 +83,10 @@ public class MainActivity extends AppCompatActivity {
                 filterByDate();
             }
         });
-        plannerBtn.setOnClickListener(new View.OnClickListener() {
+        schedulerBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, calendar_planner_activity.class));
+                startActivity(new Intent(MainActivity.this, EventSchedulerActivity.class));
             }
         });
 
@@ -113,8 +114,9 @@ public class MainActivity extends AppCompatActivity {
         swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {
+                dataObjectArrayList = null;
                 recyclerView.setVisibility(View.GONE);
-                MyAsyncTasks downloadingTask = new MyAsyncTasks();
+                FetchRSSFeedData downloadingTask = new FetchRSSFeedData();
                 downloadingTask.execute();
                 swipeRefreshLayout.setRefreshing(false);
             }
@@ -180,72 +182,76 @@ public class MainActivity extends AppCompatActivity {
         datePicker.show();
     }
 
-    private void searchFunction() {
-        searchInput.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-
-            }
-
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-                if (s.toString().trim().length() == 0) {
-                    if (dataObjectArrayList.size() != 0) {
-                        recyclerView.setVisibility(View.VISIBLE);
-                        noDataFound.setVisibility(View.GONE);
-                    } else {
-                        recyclerView.setVisibility(View.GONE);
-                        noDataFound.setVisibility(View.VISIBLE);
-                    }
-
-                    mAdapter = new DataObjectAdapter(dataObjectArrayList, MainActivity.this);
-                } else {
-                    ArrayList<DataObject> clone = new ArrayList<>();
-                    for (DataObject element : dataObjectArrayList) {
-                        if (element.getRoad().toLowerCase().contains(s.toString().toLowerCase())) {
-                            clone.add(element);
-                        }
-                    }
-                    if (clone.size() != 0) {
-                        recyclerView.setVisibility(View.VISIBLE);
-                        noDataFound.setVisibility(View.GONE);
-                    } else {
-                        recyclerView.setVisibility(View.GONE);
-                        noDataFound.setVisibility(View.VISIBLE);
-                    }
-
-                    mAdapter = new DataObjectAdapter(clone, MainActivity.this);
-                }
-                recyclerView.setAdapter(mAdapter);
-                mAdapter.notifyDataSetChanged();
-            }
-
-            @Override
-            public void afterTextChanged(Editable s) {
-
-            }
-        });
-    }
 
     private void initializeVariables() {
         toolBar = findViewById(R.id.topbar);
-        plannerBtn = findViewById(R.id.scheduler_btn);
-        toolBar.setBackgroundResource(R.drawable.bottom_corer_round);
-
+        toolBar.setBackgroundResource(R.drawable.app_top_bar);
         dataObjectArrayList = new ArrayList<>();
+        swipeRefreshLayout = findViewById(R.id.swipe_refresh_layout);
         recyclerView = findViewById(R.id.data_list);
         shimmerFrameLayout = findViewById(R.id.shimmer_loader);
         noDataFound = findViewById(R.id.no_data_result);
         searchInput = findViewById(R.id.search_input);
         filtersBtn = findViewById(R.id.filters_btn);
-        swipeRefreshLayout = findViewById(R.id.swipe_refresh_layout);
-
+        schedulerBtn = findViewById(R.id.scheduler_btn);
         dateLayout = findViewById(R.id.filtered_date_section);
         dateTv = findViewById(R.id.filter_text);
         closeBtn = findViewById(R.id.close_btn);
     }
 
-    public class MyAsyncTasks extends AsyncTask<String, String, String> {
+    public class SearchInBackground extends AsyncTask<String, String, String> {
+
+        @Override
+        protected String doInBackground(String... params) {
+            searchInput.addTextChangedListener(new TextWatcher() {
+                @Override
+                public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+                }
+
+                @Override
+                public void onTextChanged(CharSequence s, int start, int before, int count) {
+                    if (s.toString().trim().length() == 0) {
+                        if (dataObjectArrayList.size() != 0) {
+                            recyclerView.setVisibility(View.VISIBLE);
+                            noDataFound.setVisibility(View.GONE);
+                        } else {
+                            recyclerView.setVisibility(View.GONE);
+                            noDataFound.setVisibility(View.VISIBLE);
+                        }
+
+                        mAdapter = new DataObjectAdapter(dataObjectArrayList, MainActivity.this);
+                    } else {
+                        ArrayList<DataObject> clone = new ArrayList<>();
+                        for (DataObject element : dataObjectArrayList) {
+                            if (element.getRoad().toLowerCase().contains(s.toString().toLowerCase())) {
+                                clone.add(element);
+                            }
+                        }
+                        if (clone.size() != 0) {
+                            recyclerView.setVisibility(View.VISIBLE);
+                            noDataFound.setVisibility(View.GONE);
+                        } else {
+                            recyclerView.setVisibility(View.GONE);
+                            noDataFound.setVisibility(View.VISIBLE);
+                        }
+
+                        mAdapter = new DataObjectAdapter(clone, MainActivity.this);
+                    }
+                    recyclerView.setAdapter(mAdapter);
+                    mAdapter.notifyDataSetChanged();
+                }
+
+                @Override
+                public void afterTextChanged(Editable s) {
+
+                }
+            });
+            return "";
+        }
+    }
+
+    public class FetchRSSFeedData extends AsyncTask<String, String, String> {
 
 
         @Override
@@ -254,21 +260,22 @@ public class MainActivity extends AppCompatActivity {
             shimmerFrameLayout.startShimmer();
             shimmerFrameLayout.setVisibility(View.VISIBLE);
             recyclerView.setVisibility(View.GONE);
+            noDataFound.setVisibility(View.GONE);
         }
 
         @Override
         protected String doInBackground(String... params) {
             // Initiates API call in background and stores the response in current variable
-            String current = "";
             try {
                 URL url = new URL("http://m.highwaysengland.co.uk/feeds/rss/AllEvents.xml");
                 URLConnection conn = url.openConnection();
                 XmlPullParserHandler parser = new XmlPullParserHandler();
-                InputStream is = conn.getInputStream();
-                dataObjectArrayList = (ArrayList<DataObject>) parser.parse(is);
-                Log.d("arraySize", dataObjectArrayList.size() + "");
-            } catch (Exception ex) {
-                Log.d("errorinconvertings", ex.toString());
+                InputStream inputStream = conn.getInputStream();
+                dataObjectArrayList = (ArrayList<DataObject>) parser.parse(inputStream);
+
+            } catch (Exception e) {
+                dataObjectArrayList = new ArrayList<DataObject>();
+                Log.d("Error", e.toString());
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
@@ -277,13 +284,12 @@ public class MainActivity extends AppCompatActivity {
                     }
                 });
             }
-            return current;
+            return "";
         }
 
         @Override
         protected void onPostExecute(String s) {
-            Log.d("data", s);
-            // dismiss the progress dialog after receiving data from API
+
             shimmerFrameLayout.setVisibility(View.GONE);
             if (dataObjectArrayList.size() > 0) {
                 recyclerView.setVisibility(View.VISIBLE);
@@ -293,7 +299,7 @@ public class MainActivity extends AppCompatActivity {
                 noDataFound.setVisibility(View.VISIBLE);
             }
 
-            Paper.book().write("datalist", dataObjectArrayList);
+            Paper.book().write("dataObject", dataObjectArrayList);
             mAdapter = new DataObjectAdapter(dataObjectArrayList, MainActivity.this);
             recyclerView.setNestedScrollingEnabled(false);
             recyclerView.setLayoutManager(new LinearLayoutManager(MainActivity.this));

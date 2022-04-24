@@ -3,15 +3,22 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/dev/AndroidStudioProjects/Imbaya_Dennis_S1903332/app/src/main/res/drawable/app_top_bar.xml" value="0.149" />
         <entry key="..\:/dev/AndroidStudioProjects/Imbaya_Dennis_S1903332/app/src/main/res/layout-land/activity_main.xml" value="0.153125" />
         <entry key="..\:/dev/AndroidStudioProjects/Imbaya_Dennis_S1903332/app/src/main/res/layout-land/activity_roadworks_details.xml" value="0.23333333333333334" />
+        <entry key="..\:/dev/AndroidStudioProjects/Imbaya_Dennis_S1903332/app/src/main/res/layout-land/single_data_item.xml" value="0.24791666666666667" />
         <entry key="..\:/dev/AndroidStudioProjects/Imbaya_Dennis_S1903332/app/src/main/res/layout/activity_event_list.xml" value="0.25555555555555554" />
-        <entry key="..\:/dev/AndroidStudioProjects/Imbaya_Dennis_S1903332/app/src/main/res/layout/activity_main.xml" value="0.2657407407407407" />
+        <entry key="..\:/dev/AndroidStudioProjects/Imbaya_Dennis_S1903332/app/src/main/res/layout/activity_main.xml" value="0.20277777777777778" />
         <entry key="..\:/dev/AndroidStudioProjects/Imbaya_Dennis_S1903332/app/src/main/res/layout/activity_planner.xml" value="0.36666666666666664" />
         <entry key="..\:/dev/AndroidStudioProjects/Imbaya_Dennis_S1903332/app/src/main/res/layout/activity_roadworks_details.xml" value="0.2657407407407407" />
+        <entry key="..\:/dev/AndroidStudioProjects/Imbaya_Dennis_S1903332/app/src/main/res/layout/activity_scheduled_roadworks_list.xml" value="0.18802083333333333" />
+        <entry key="..\:/dev/AndroidStudioProjects/Imbaya_Dennis_S1903332/app/src/main/res/layout/activity_scheduler.xml" value="0.23333333333333334" />
+        <entry key="..\:/dev/AndroidStudioProjects/Imbaya_Dennis_S1903332/app/src/main/res/layout/content_map.xml" value="0.36666666666666664" />
+        <entry key="..\:/dev/AndroidStudioProjects/Imbaya_Dennis_S1903332/app/src/main/res/layout/dialog_box.xml" value="0.36666666666666664" />
         <entry key="..\:/dev/AndroidStudioProjects/Imbaya_Dennis_S1903332/app/src/main/res/layout/event_location.xml" value="0.18802083333333333" />
         <entry key="..\:/dev/AndroidStudioProjects/Imbaya_Dennis_S1903332/app/src/main/res/layout/shimmer_placeholder_layout.xml" value="0.30092592592592593" />
         <entry key="..\:/dev/AndroidStudioProjects/Imbaya_Dennis_S1903332/app/src/main/res/layout/single_data_item.xml" value="0.2657407407407407" />
+        <entry key="..\:/dev/AndroidStudioProjects/Imbaya_Dennis_S1903332/app/src/main/res/layout/single_event_item.xml" value="0.36666666666666664" />
         <entry key="..\:/dev/AndroidStudioProjects/Imbaya_Dennis_S1903332/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.196" />
         <entry key="..\:/dev/AndroidStudioProjects/TripPlanner/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2615" />
         <entry key="..\:/dev/AndroidStudioProjects/TripPlanner/app/src/main/res/drawable/bottom_corer_round.xml" value="0.196" />

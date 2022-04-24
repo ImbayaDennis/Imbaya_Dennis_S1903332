@@ -2,7 +2,6 @@ package com.example.tripplanner.Adapters;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,7 +11,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.tripplanner.Activities.roadworks_details;
+import com.example.tripplanner.Activities.RoadworksDetailsActivity;
 import com.example.tripplanner.Models.DataObject;
 import com.example.tripplanner.R;
 
@@ -41,7 +40,6 @@ public class DataObjectAdapter extends RecyclerView.Adapter<DataObjectAdapter.Ne
     public void onBindViewHolder(@NonNull NewViewHolder newViewHolder, int position) {
 
         DataObject item = dataObjectList.get(position);
-        Log.d("dataITem", item.toString());
 
         newViewHolder.road.setText("Road: " + item.getRoad());
         newViewHolder.region.setText("Region : " + item.getRegion());
@@ -51,8 +49,8 @@ public class DataObjectAdapter extends RecyclerView.Adapter<DataObjectAdapter.Ne
         newViewHolder.layout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(context, roadworks_details.class);
-                intent.putExtra("details", item);
+                Intent intent = new Intent(context, RoadworksDetailsActivity.class);
+                intent.putExtra("singleDataObject", item);
                 context.startActivity(intent);
             }
         });
@@ -67,16 +65,16 @@ public class DataObjectAdapter extends RecyclerView.Adapter<DataObjectAdapter.Ne
     public class NewViewHolder extends RecyclerView.ViewHolder {
 
         LinearLayout layout;
-        TextView road, region, status, date, title;
+        TextView title, date, region, road, status;
 
         public NewViewHolder(@NonNull View itemView) {
             super(itemView);
-            layout = itemView.findViewById(R.id.parent_layout);
+            layout = itemView.findViewById(R.id.data_parent_layout);
+            title = itemView.findViewById(R.id.title);
+            date = itemView.findViewById(R.id.publish_date);
             road = itemView.findViewById(R.id.road_tv);
             region = itemView.findViewById(R.id.region_tv);
             status = itemView.findViewById(R.id.status);
-            date = itemView.findViewById(R.id.date_tv);
-            title = itemView.findViewById(R.id.title);
         }
     }
 }
