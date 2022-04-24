@@ -3,6 +3,7 @@ package com.example.tripplanner.Activities;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -12,6 +13,15 @@ import androidx.cardview.widget.CardView;
 
 import com.example.tripplanner.Models.DataObject;
 import com.example.tripplanner.R;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+/*
+ *
+ * @author Dennis Finch Imbaya S1903332
+ *
+ * */
 
 public class RoadworksDetailsActivity extends AppCompatActivity {
     DataObject item;
@@ -28,13 +38,45 @@ public class RoadworksDetailsActivity extends AppCompatActivity {
         initializeVariables();
 
         item = (DataObject) getIntent().getSerializableExtra("singleDataObject");
+
+        String scheduleREGEX = "([a-zA-Z0\\s]*between\\s(\\d{2}:\\d{2})\\sand\\s(\\d{2}:\\d{2})\\sfrom\\s(\\d{1,2}\\s[a-zA-Z]*\\s\\d{4})\\sto\\s(\\d{1,2}\\s[a-zA-Z]*\\s\\d{4})|(From\\s(\\d{2}:\\d{2})\\son\\s(\\d{1,2}\\s[\\w]*\\s\\d{4})\\sto\\s(\\d{2}:\\d{2})\\son\\s(\\d{1,2}\\s[\\w]*\\s\\d{4})))";
+        String lanesClosedRegex = "(Lane\\sClosures\\s:\\s([a-zA-Z0-9\\s,]*)|Lanes\\sClosed\\s:\\s([a-zA-Z\\s]*))";
+        String reasonREGEX = "(Reason\\s:\\s([a-zA-Z\\s]*))";
+        String statusREGEX = "(Status\\s:\\s([a-zA-Z\\s]*))";
+
+        Pattern schedulePattern = Pattern.compile(scheduleREGEX);
+        Matcher scheduleMatcher = schedulePattern.matcher(item.getDescription());
+
+        Pattern lanesClosedPattern = Pattern.compile(lanesClosedRegex);
+        Matcher lanesClosedMatcher = lanesClosedPattern.matcher(item.getDescription());
+
+        Pattern reasonsPattern = Pattern.compile(reasonREGEX);
+        Matcher reasonsMatcher = reasonsPattern.matcher(item.getDescription());
+
+        Pattern statusPattern = Pattern.compile(statusREGEX);
+        Matcher statusMatcher = statusPattern.matcher(item.getDescription());
+
+        while (scheduleMatcher.find()) {
+              Log.d("Schedule", scheduleMatcher.group());
+        }
+
+        while (lanesClosedMatcher.find()) {
+            Log.d("Schedule", lanesClosedMatcher.group());
+        }
+
+        while (reasonsMatcher.find()) {
+            Log.d("Schedule", reasonsMatcher.group());
+        }
+
+        while (statusMatcher.find()) {
+            Log.d("Schedule", statusMatcher.group());
+        }
+
         if (item != null) {
             title.setText(item.getTitle());
             description.setText("Description\n\n " + item.getDescription());
-            guid.setText("Guid: " + item.getGuid());
             link.setText("Link: " + item.getLink());
             publishDate.setText(item.getPublishDate());
-            reference.setText("Reference: " + item.getReference());
             road.setText("Road: " + item.getRoad());
             region.setText("Region: " + item.getRegion());
             county.setText("County: " + item.getCounty());
@@ -63,7 +105,7 @@ public class RoadworksDetailsActivity extends AppCompatActivity {
         locationBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(RoadworksDetailsActivity.this, location_activity.class);
+                Intent intent = new Intent(RoadworksDetailsActivity.this, MapLocationActivity.class);
                 intent.putExtra("lat", item.getLatitude());
                 intent.putExtra("long", item.getLongitude());
                 startActivity(intent);
@@ -77,19 +119,17 @@ public class RoadworksDetailsActivity extends AppCompatActivity {
         toolBar = findViewById(R.id.topbar);
         toolBar.setBackgroundResource(R.drawable.app_top_bar);
 
-        locationBtn = findViewById(R.id.location_btn);
         backBtn = findViewById(R.id.back_btn);
-        status = findViewById(R.id.status);
-        description = findViewById(R.id.description);
-        guid = findViewById(R.id.guid);
-        link = findViewById(R.id.link);
-        publishDate = findViewById(R.id.publish_date);
         title = findViewById(R.id.title);
-        reference = findViewById(R.id.reference);
         road = findViewById(R.id.road);
+        description = findViewById(R.id.description);
+        status = findViewById(R.id.status);
         region = findViewById(R.id.region);
         county = findViewById(R.id.county);
         latitude = findViewById(R.id.latitude);
         longitude = findViewById(R.id.longitude);
+        publishDate = findViewById(R.id.publish_date);
+        link = findViewById(R.id.link);
+        locationBtn = findViewById(R.id.location_btn);
     }
 }

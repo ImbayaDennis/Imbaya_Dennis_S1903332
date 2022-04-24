@@ -2,6 +2,12 @@ package com.example.tripplanner.Models;
 
 import java.io.Serializable;
 
+/*
+ *
+ * @author Dennis Finch Imbaya S1903332
+ *
+ * */
+
 public class DataObject implements Serializable {
 
     String status, description, guid, link, publishDate, title, reference, road, region, county, latitude, longitude, overallStart, overallEnd, eventStart, eventEnd;

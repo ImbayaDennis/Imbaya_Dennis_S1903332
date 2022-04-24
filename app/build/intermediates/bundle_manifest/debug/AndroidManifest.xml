@@ -45,7 +45,7 @@
         <activity
             android:name="com.example.tripplanner.Activities.RoadworksDetailsActivity"
             android:exported="true" />
-        <activity android:name="com.example.tripplanner.Activities.location_activity" />
+        <activity android:name="com.example.tripplanner.Activities.MapLocationActivity" />
         <activity
             android:name="com.example.tripplanner.Activities.MainActivity"
             android:configChanges="orientation|screenSize"

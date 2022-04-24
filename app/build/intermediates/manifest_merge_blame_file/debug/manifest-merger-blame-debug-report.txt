@@ -81,9 +81,9 @@
 46-->C:\dev\AndroidStudioProjects\Imbaya_Dennis_S1903332\app\src\main\AndroidManifest.xml:25:13-64
 47            android:exported="true" />
 47-->C:\dev\AndroidStudioProjects\Imbaya_Dennis_S1903332\app\src\main\AndroidManifest.xml:26:13-36
-48        <activity android:name="com.example.tripplanner.Activities.location_activity" />
-48-->C:\dev\AndroidStudioProjects\Imbaya_Dennis_S1903332\app\src\main\AndroidManifest.xml:27:9-66
-48-->C:\dev\AndroidStudioProjects\Imbaya_Dennis_S1903332\app\src\main\AndroidManifest.xml:27:19-63
+48        <activity android:name="com.example.tripplanner.Activities.MapLocationActivity" />
+48-->C:\dev\AndroidStudioProjects\Imbaya_Dennis_S1903332\app\src\main\AndroidManifest.xml:27:9-68
+48-->C:\dev\AndroidStudioProjects\Imbaya_Dennis_S1903332\app\src\main\AndroidManifest.xml:27:19-65
 49        <activity
 49-->C:\dev\AndroidStudioProjects\Imbaya_Dennis_S1903332\app\src\main\AndroidManifest.xml:28:9-37:20
 50            android:name="com.example.tripplanner.Activities.MainActivity"

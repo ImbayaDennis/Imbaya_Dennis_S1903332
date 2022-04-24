@@ -2,6 +2,12 @@ package com.example.tripplanner.Models;
 
 import java.io.Serializable;
 
+/*
+ *
+ * @author Dennis Finch Imbaya S1903332
+ *
+ * */
+
 public class EventObject implements Serializable {
     String title, description, date;
 

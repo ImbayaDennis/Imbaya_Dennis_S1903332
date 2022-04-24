@@ -37,6 +37,12 @@ import java.util.Calendar;
 
 import io.paperdb.Paper;
 
+/*
+ *
+ * @author Dennis Finch Imbaya S1903332
+ *
+ * */
+
 public class MainActivity extends AppCompatActivity {
 
     private static DataObjectAdapter mAdapter;

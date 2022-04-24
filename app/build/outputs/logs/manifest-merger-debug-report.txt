@@ -151,10 +151,10 @@ ADDED from C:\dev\AndroidStudioProjects\Imbaya_Dennis_S1903332\app\src\main\Andr
 		ADDED from C:\dev\AndroidStudioProjects\Imbaya_Dennis_S1903332\app\src\main\AndroidManifest.xml:26:13-36
 	android:name
 		ADDED from C:\dev\AndroidStudioProjects\Imbaya_Dennis_S1903332\app\src\main\AndroidManifest.xml:25:13-64
-activity#com.example.tripplanner.Activities.location_activity
-ADDED from C:\dev\AndroidStudioProjects\Imbaya_Dennis_S1903332\app\src\main\AndroidManifest.xml:27:9-66
+activity#com.example.tripplanner.Activities.MapLocationActivity
+ADDED from C:\dev\AndroidStudioProjects\Imbaya_Dennis_S1903332\app\src\main\AndroidManifest.xml:27:9-68
 	android:name
-		ADDED from C:\dev\AndroidStudioProjects\Imbaya_Dennis_S1903332\app\src\main\AndroidManifest.xml:27:19-63
+		ADDED from C:\dev\AndroidStudioProjects\Imbaya_Dennis_S1903332\app\src\main\AndroidManifest.xml:27:19-65
 activity#com.example.tripplanner.Activities.MainActivity
 ADDED from C:\dev\AndroidStudioProjects\Imbaya_Dennis_S1903332\app\src\main\AndroidManifest.xml:28:9-37:20
 	android:exported

@@ -19,6 +19,12 @@ import com.example.tripplanner.R;
 
 import java.util.List;
 
+/*
+ *
+ * @author Dennis Finch Imbaya S1903332
+ *
+ * */
+
 public class EventObjectAdapter extends RecyclerView.Adapter<EventObjectAdapter.NewViewHolder> {
 
     List<EventObject> eventObjectList;

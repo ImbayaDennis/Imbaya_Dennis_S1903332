@@ -10,8 +10,8 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/topbar"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:elevation="50dp">
+        android:layout_height="@dimen/topbar_height"
+        android:elevation="70dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -29,6 +29,7 @@
                 app:tint="@color/colorAccent" />
 
             <TextView
+                android:id="@+id/application_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
@@ -37,6 +38,17 @@
                 android:textColor="@color/colorAccent"
                 android:textSize="@dimen/header_size"
                 android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_below="@id/application_name"
+                android:fontFamily="@font/roboto_bold"
+                android:text="@string/student_details"
+                android:textColor="@color/colorPrimaryLight"
+                android:textSize="@dimen/text_size" />
+
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
 

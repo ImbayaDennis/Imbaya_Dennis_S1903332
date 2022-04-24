@@ -17,6 +17,12 @@ import com.example.tripplanner.R;
 
 import java.util.List;
 
+/*
+ *
+ * @author Dennis Finch Imbaya S1903332
+ *
+ * */
+
 public class DataObjectAdapter extends RecyclerView.Adapter<DataObjectAdapter.NewViewHolder> {
 
     List<DataObject> dataObjectList;

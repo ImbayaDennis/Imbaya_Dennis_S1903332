@@ -2696,6 +2696,7 @@ id animateToEnd
 id animateToStart
 id antiClockwise
 id anticipate
+id application_name
 id arc
 id asConfigured
 id async
@@ -2832,7 +2833,6 @@ id graph_wrap
 id group_divider
 id grouping
 id groups
-id guid
 id guideline
 id header_title
 id hideable
@@ -2981,7 +2981,6 @@ id radial
 id radio
 id ratio
 id rectangles
-id reference
 id region
 id region_tv
 id restart

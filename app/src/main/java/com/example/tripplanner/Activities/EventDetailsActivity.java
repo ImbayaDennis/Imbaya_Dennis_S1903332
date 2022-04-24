@@ -28,6 +28,12 @@ public class EventDetailsActivity extends AppCompatActivity {
     private ArrayList<DataObject> dataObjectArrayList;
     private TextView noDataFound;
 
+    /*
+     *
+     * @author Dennis Finch Imbaya S1903332
+     *
+     * */
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

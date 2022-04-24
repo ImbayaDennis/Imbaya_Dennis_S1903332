@@ -27,6 +27,12 @@ import java.util.Calendar;
 
 import io.paperdb.Paper;
 
+/*
+ *
+ * @author Dennis Finch Imbaya S1903332
+ *
+ * */
+
 public class EventSchedulerActivity extends AppCompatActivity {
     private CardView toolBar, addEventBtn;
     private ImageView backBtn;

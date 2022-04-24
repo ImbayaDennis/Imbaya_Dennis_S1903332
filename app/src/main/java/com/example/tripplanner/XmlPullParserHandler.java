@@ -14,6 +14,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 
+/*
+*
+* @author Dennis Finch Imbaya S1903332
+*
+* */
+
 public class XmlPullParserHandler {
     private final List<DataObject> dataItemsList = new ArrayList<DataObject>();
     private DataObject item;

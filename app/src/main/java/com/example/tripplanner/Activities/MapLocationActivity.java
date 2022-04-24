@@ -50,7 +50,13 @@ import com.google.android.gms.tasks.Task;
 import java.util.List;
 import java.util.Locale;
 
-public class location_activity extends AppCompatActivity implements OnMapReadyCallback {
+/*
+ *
+ * @author Dennis Finch Imbaya S1903332
+ *
+ * */
+
+public class MapLocationActivity extends AppCompatActivity implements OnMapReadyCallback {
     public static String myEvenLocation = "";
     private final float DEFAULT_ZOOM = 15;
     double latitude, longitude;
@@ -76,7 +82,7 @@ public class location_activity extends AppCompatActivity implements OnMapReadyCa
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
         mapView = mapFragment.getView();
-        mFusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(location_activity.this);
+        mFusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(MapLocationActivity.this);
     }
 
 
@@ -107,7 +113,7 @@ public class location_activity extends AppCompatActivity implements OnMapReadyCa
 
         LocationSettingsRequest.Builder builder = new LocationSettingsRequest.Builder().addLocationRequest(locationRequest);
 
-        SettingsClient settingsClient = LocationServices.getSettingsClient(location_activity.this);
+        SettingsClient settingsClient = LocationServices.getSettingsClient(MapLocationActivity.this);
         Task<LocationSettingsResponse> settingTask = settingsClient.checkLocationSettings(builder.build());
 
         LatLng latLng = new LatLng(latitude, longitude);
@@ -116,7 +122,7 @@ public class location_activity extends AppCompatActivity implements OnMapReadyCa
                 .title(getCompleteAddressString(latitude, longitude)));
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng, DEFAULT_ZOOM));
 
-        settingTask.addOnSuccessListener(location_activity.this, new OnSuccessListener<LocationSettingsResponse>() {
+        settingTask.addOnSuccessListener(MapLocationActivity.this, new OnSuccessListener<LocationSettingsResponse>() {
             @Override
             public void onSuccess(LocationSettingsResponse locationSettingsResponse) {
                 Log.d("locationissue", "addon success");
@@ -124,14 +130,14 @@ public class location_activity extends AppCompatActivity implements OnMapReadyCa
             }
         });
 
-        settingTask.addOnFailureListener(location_activity.this, new OnFailureListener() {
+        settingTask.addOnFailureListener(MapLocationActivity.this, new OnFailureListener() {
             @Override
             public void onFailure(@NonNull Exception e) {
                 if (e instanceof ResolvableApiException) {
                     ResolvableApiException resolvable = (ResolvableApiException) e;
                     try {
                         Log.d("locationissue", "fail");
-                        resolvable.startResolutionForResult(location_activity.this, 51);
+                        resolvable.startResolutionForResult(MapLocationActivity.this, 51);
                     } catch (IntentSender.SendIntentException e1) {
                         e1.printStackTrace();
                     }
@@ -197,7 +203,7 @@ public class location_activity extends AppCompatActivity implements OnMapReadyCa
                                         mFusedLocationProviderClient.removeLocationUpdates(locationCallback);
                                     }
                                 };
-                                if (ActivityCompat.checkSelfPermission(location_activity.this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(location_activity.this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+                                if (ActivityCompat.checkSelfPermission(MapLocationActivity.this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(MapLocationActivity.this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
                                     // TODO: Consider calling
                                     //    ActivityCompat#requestPermissions
                                     // here to request the missing permissions, and then overriding
@@ -211,7 +217,7 @@ public class location_activity extends AppCompatActivity implements OnMapReadyCa
 
                             }
                         } else {
-                            Toast.makeText(location_activity.this, "Cannot get last location", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(MapLocationActivity.this, "Cannot get last location", Toast.LENGTH_SHORT).show();
                         }
                     }
                 });

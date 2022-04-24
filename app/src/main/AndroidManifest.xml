@@ -24,7 +24,7 @@
         <activity
             android:name=".Activities.RoadworksDetailsActivity"
             android:exported="true" />
-        <activity android:name=".Activities.location_activity" />
+        <activity android:name=".Activities.MapLocationActivity" />
         <activity
             android:name=".Activities.MainActivity"
             android:configChanges="orientation|screenSize"
